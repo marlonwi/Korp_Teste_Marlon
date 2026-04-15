@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\EstoqueService",
+    "\\front-notas",
+    "\\front-notas\\src",
+    "\\front-notas\\src\\app",
+    "\\front-notas\\src\\app\\pages",
+    "\\front-notas\\src\\app\\pages\\nota-detalhe",
+    "\\front-notas\\src\\app\\pages\\notas",
+    "\\front-notas\\src\\app\\pages\\produtos",
+    "\\front-notas\\src\\app\\services"
+  ],
+  "SelectedNode": "\\front-notas\\src\\app\\pages\\nota-detalhe\\nota-detalhe.css",
+  "PreviewInSolutionExplorer": false
+}

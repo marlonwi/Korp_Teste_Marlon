@@ -1,0 +1,44 @@
+[
+  {
+    "ContainingType": "EstoqueService.Controllers.ProdutosController",
+    "Method": "Criar",
+    "RelativePath": "produtos",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "produto",
+        "Type": "EstoqueService.Models.Produto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EstoqueService.Controllers.ProdutosController",
+    "Method": "Listar",
+    "RelativePath": "produtos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EstoqueService.Controllers.ProdutosController",
+    "Method": "BaixarEstoque",
+    "RelativePath": "produtos/estoque/baixar-lote",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "EstoqueService.DTOs.BaixaEstoqueRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

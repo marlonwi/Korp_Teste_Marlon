@@ -1,0 +1,75 @@
+[
+  {
+    "ContainingType": "FaturamentoService.Controllers.FaturamentoController",
+    "Method": "CriarNota",
+    "RelativePath": "notas",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FaturamentoService.Controllers.FaturamentoController",
+    "Method": "Listar",
+    "RelativePath": "notas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FaturamentoService.Controllers.FaturamentoController",
+    "Method": "BuscarPorId",
+    "RelativePath": "notas/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FaturamentoService.Controllers.FaturamentoController",
+    "Method": "FecharNota",
+    "RelativePath": "notas/{id}/fechar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FaturamentoService.Controllers.FaturamentoController",
+    "Method": "AdicionarItens",
+    "RelativePath": "notas/{id}/itens",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "FaturamentoService.DTOs.NotaRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
