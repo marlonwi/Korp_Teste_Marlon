@@ -1,21 +1,30 @@
 # Sistema de Faturamento
 
-## Tecnologias
+## 📌 Descrição
+Aplicação para emissão de notas fiscais com controle de estoque, utilizando arquitetura de microsserviços.
+
+## 🚀 Tecnologias
 - Angular
 - .NET (C#)
+- Entity Framework
 - Angular Material
 
-## Arquitetura
+## 🧩 Arquitetura
 - Microsserviço de Estoque
 - Microsserviço de Faturamento
 
-## Funcionalidades
+## ✅ Funcionalidades
 - Cadastro de produtos
-- Criação de notas
-- Adição de itens
+- Criação de notas fiscais
+- Adição de itens na nota
 - Fechamento de nota (baixa de estoque)
-- Impressão
+- Impressão de nota
+- Validações de regras de negócio
 
-## Observações
-- Validação de regras de negócio
-- Tratamento de erros entre serviços
+## ⚠️ Regras importantes
+- Não é possível alterar notas fechadas
+- Não é possível imprimir notas abertas
+- Estoque é atualizado ao fechar a nota
+
+## 🎬 Demonstração
+(Você pode colocar aqui o link do vídeo depois)
