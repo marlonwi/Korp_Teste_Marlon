@@ -1,0 +1,33 @@
+.container {
+  max-width: 700px;
+  margin: 30px auto;
+}
+
+.form-row {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+h2 {
+  margin-bottom: 15px;
+}
+.tabela {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+  .tabela th,
+  .tabela td {
+    text-align: center;
+    padding: 8px;
+  }
+
+  .tabela th {
+    border-bottom: 2px solid #ddd;
+  }
+
+  .tabela td {
+    border-bottom: 1px solid #eee;
+  }

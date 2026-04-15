@@ -1,0 +1,86 @@
+<mat-card class="nota-container" *ngIf="nota">
+
+  <div class="nota-header">
+    <h1>NOTA FISCAL</h1>
+
+    <span class="status" [class.fechada]="nota.status === 'FECHADA'">
+      {{ nota.status }}
+    </span>
+  </div>
+
+  <div class="nota-info">
+    <p><strong>ID:</strong> {{ nota.id }}</p>
+    <p><strong>Data:</strong> {{ nota.data | date:'dd/MM/yyyy HH:mm' }}</p>
+  </div>
+
+  <hr>
+
+  <div *ngIf="nota.status === 'ABERTA'">
+
+    <h3>Adicionar Item</h3>
+
+    <div class="form-row">
+
+      <mat-form-field appearance="outline">
+        <mat-label>Produto</mat-label>
+        <mat-select [(ngModel)]="novoItem.produtoId">
+          <mat-option *ngFor="let p of produtos" [value]="p.id">
+            {{ p.descricao }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Quantidade</mat-label>
+        <input matInput type="number" [(ngModel)]="novoItem.quantidade">
+      </mat-form-field>
+
+      <button mat-raised-button color="primary" (click)="adicionarItem()">
+        Adicionar
+      </button>
+
+    </div>
+
+  </div>
+
+  <h3>Itens</h3>
+
+  <table class="tabela">
+    <thead>
+      <tr>
+        <th>Produto</th>
+        <th>Quantidade</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let item of nota.itens">
+        <td>{{ item.produtoId }}</td>
+        <td>{{ item.quantidade }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="acoes">
+
+    <button mat-raised-button
+            color="warn"
+            (click)="fecharNota()"
+            [disabled]="fechando"
+            *ngIf="nota.status === 'ABERTA'">
+
+      <span *ngIf="!fechando">Fechar Nota</span>
+      <mat-spinner *ngIf="fechando" diameter="20"></mat-spinner>
+
+    </button>
+
+    <button mat-raised-button
+            color="accent"
+            (click)="imprimirNota()"
+            *ngIf="nota.status === 'FECHADA'">
+      Imprimir
+    </button>
+
+  </div>
+
+</mat-card>

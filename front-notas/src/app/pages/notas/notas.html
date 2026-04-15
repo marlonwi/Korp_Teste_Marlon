@@ -1,0 +1,40 @@
+<mat-card class="container">
+
+  <div class="header">
+    <h2>Notas</h2>
+
+    <button mat-raised-button color="primary" (click)="criarNota()">
+      Criar Nota
+    </button>
+  </div>
+
+</mat-card>
+
+<br>
+
+<mat-card class="container">
+
+  <div class="lista">
+
+    <div class="nota-item" *ngFor="let n of notas" [routerLink]="['/notas', n.id]">
+
+      <div>
+        <strong>Nota {{ n.id }}</strong>
+      </div>
+
+      <span class="status" [class.fechada]="n.status === 'FECHADA'">
+        {{ n.status }}
+      </span>
+
+    </div>
+
+  </div>
+
+</mat-card>
+
+<div *ngIf="loading" class="loading">
+  <mat-spinner></mat-spinner>
+</div>
+<div *ngIf="notas.length === 0 && !loading" class="empty">
+  Nenhuma nota encontrada
+</div>

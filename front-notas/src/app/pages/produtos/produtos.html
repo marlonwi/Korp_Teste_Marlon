@@ -1,0 +1,51 @@
+<mat-card class="container">
+
+  <h2>Produtos</h2>
+
+  <!-- FORM -->
+  <div class="form-row">
+
+    <mat-form-field appearance="outline">
+      <mat-label>Descrição</mat-label>
+      <input matInput [(ngModel)]="novoProduto.descricao" required>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Saldo</mat-label>
+      <input matInput type="number" [(ngModel)]="novoProduto.saldo">
+    </mat-form-field>
+
+    <button mat-raised-button
+            color="primary"
+            (click)="criarProduto()"
+            [disabled]="!novoProduto.descricao || novoProduto.descricao.trim() === ''">
+      Criar
+    </button>
+
+  </div>
+
+</mat-card>
+
+<br>
+
+<mat-card class="container">
+
+  <h2>Lista de Produtos</h2>
+
+  <table class="tabela">
+    <thead>
+      <tr>
+        <th>Descrição</th>
+        <th>Estoque</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let p of produtos">
+        <td>{{ p.descricao }}</td>
+        <td>{{ p.saldo }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+</mat-card>

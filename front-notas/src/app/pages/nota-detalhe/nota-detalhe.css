@@ -1,0 +1,54 @@
+.nota-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.nota-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.status {
+  padding: 6px 12px;
+  border-radius: 12px;
+  background: #4caf50;
+  color: white;
+}
+
+  .status.fechada {
+    background: #f44336;
+  }
+
+.form-row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.tabela {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+  .tabela th,
+  .tabela td {
+    text-align: center;
+    padding: 8px;
+  }
+
+  .tabela th {
+    border-bottom: 2px solid #ddd;
+  }
+
+  .tabela td {
+    border-bottom: 1px solid #eee;
+  }
+
+.acoes {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
