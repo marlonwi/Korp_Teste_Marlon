@@ -27,4 +27,4 @@ Aplicação para emissão de notas fiscais com controle de estoque, utilizando a
 - Estoque é atualizado ao fechar a nota
 
 ## 🎬 Demonstração
-(Você pode colocar aqui o link do vídeo depois)
+https://drive.google.com/file/d/1QJijPpeVnir5dt5ST3Ar7rnd-H5b2Ql3/view?usp=drive_link
